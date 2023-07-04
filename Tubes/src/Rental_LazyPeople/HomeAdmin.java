@@ -34,6 +34,8 @@ public class HomeAdmin extends javax.swing.JFrame {
         lbljelawat = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -85,6 +87,14 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel2.setText("yang menjadi ciri khas daerah sungai Mentaya ");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(270, 200, 330, 24);
+
+        jLabel3.setText("TES123");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(280, 240, 70, 20);
+
+        jButton1.setText("START");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(350, 240, 79, 25);
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/lovepik-summer-fresh-background-image_401540304.png"))); // NOI18N
         background.setText("jLabel1");
@@ -154,8 +164,10 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btnpesan;
     private javax.swing.JButton btnpeta;
     private javax.swing.JButton btnriwayat;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lbljelawat;
     // End of variables declaration//GEN-END:variables
 }
