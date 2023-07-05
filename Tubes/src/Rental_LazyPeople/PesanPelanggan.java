@@ -27,144 +27,130 @@ public class PesanPelanggan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblnama = new javax.swing.JLabel();
-        lblnohp = new javax.swing.JLabel();
-        lblUsia = new javax.swing.JLabel();
-        isinohp = new javax.swing.JTextField();
-        isiumur = new javax.swing.JTextField();
-        isinma = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        tmpwisata = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
-        isihrg = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        isijmlorg = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        btnhomepage = new javax.swing.JButton();
+        btnpemesanan = new javax.swing.JButton();
+        btnkeranjang = new javax.swing.JButton();
+        btnobjekwisata = new javax.swing.JButton();
+        btnpeta = new javax.swing.JButton();
+        btnriwayat = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
+        btnout = new javax.swing.JButton();
+        btnkonfirmasi = new javax.swing.JButton();
+        isinama = new javax.swing.JTextField();
+        isinik = new javax.swing.JTextField();
+        isiharga = new javax.swing.JTextField();
+        isijumlah = new javax.swing.JTextField();
         isitotal = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        isikode = new javax.swing.JTextField();
+        isinohp = new javax.swing.JTextField();
+        cmboxtujuan = new javax.swing.JComboBox<>();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(800, 470));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
-        lblnama.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        lblnama.setText("Nama");
-        getContentPane().add(lblnama);
-        lblnama.setBounds(90, 110, 40, 19);
+        btnhomepage.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnhomepage.setBorderPainted(false);
+        btnhomepage.setContentAreaFilled(false);
+        getContentPane().add(btnhomepage);
+        btnhomepage.setBounds(40, 180, 160, 40);
 
-        lblnohp.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        lblnohp.setText("No. HP");
-        getContentPane().add(lblnohp);
-        lblnohp.setBounds(90, 190, 50, 19);
+        btnpemesanan.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpemesanan.setBorderPainted(false);
+        btnpemesanan.setContentAreaFilled(false);
+        getContentPane().add(btnpemesanan);
+        btnpemesanan.setBounds(40, 240, 160, 40);
 
-        lblUsia.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        lblUsia.setText("Usia");
-        getContentPane().add(lblUsia);
-        lblUsia.setBounds(90, 150, 24, 19);
-        getContentPane().add(isinohp);
-        isinohp.setBounds(190, 190, 150, 30);
-        getContentPane().add(isiumur);
-        isiumur.setBounds(190, 150, 40, 30);
-        getContentPane().add(isinma);
-        isinma.setBounds(190, 110, 150, 30);
-
-        jButton1.setText("<");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnkeranjang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnkeranjang.setBorderPainted(false);
+        btnkeranjang.setContentAreaFilled(false);
+        btnkeranjang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnkeranjangActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(10, 10, 50, 25);
+        getContentPane().add(btnkeranjang);
+        btnkeranjang.setBounds(40, 310, 160, 40);
 
-        jLabel3.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel3.setText("Tujuan Wisata");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(90, 230, 90, 19);
+        btnobjekwisata.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnobjekwisata.setBorderPainted(false);
+        btnobjekwisata.setContentAreaFilled(false);
+        getContentPane().add(btnobjekwisata);
+        btnobjekwisata.setBounds(40, 370, 160, 40);
 
-        tmpwisata.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Patung Jelawat", "Taman Kota Sampit", "Sampit Water Park", "Citimall Sampit", "Museum Kayu Sampit", "Kebun Raya Sampit", "Pantai Ujung Pandaran" }));
-        tmpwisata.addActionListener(new java.awt.event.ActionListener() {
+        btnpeta.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpeta.setBorderPainted(false);
+        btnpeta.setContentAreaFilled(false);
+        getContentPane().add(btnpeta);
+        btnpeta.setBounds(40, 430, 160, 50);
+
+        btnriwayat.setBackground(new java.awt.Color(255, 255, 255));
+        btnriwayat.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnriwayat.setBorderPainted(false);
+        btnriwayat.setContentAreaFilled(false);
+        btnriwayat.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnriwayat.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnriwayat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tmpwisataActionPerformed(evt);
+                btnriwayatActionPerformed(evt);
             }
         });
-        getContentPane().add(tmpwisata);
-        tmpwisata.setBounds(190, 230, 140, 22);
+        getContentPane().add(btnriwayat);
+        btnriwayat.setBounds(40, 490, 160, 60);
 
-        jLabel2.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel2.setText("Harga");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(400, 110, 33, 19);
-        getContentPane().add(isihrg);
-        isihrg.setBounds(510, 110, 140, 30);
+        btntentang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        getContentPane().add(btntentang);
+        btntentang.setBounds(30, 870, 160, 40);
 
-        jLabel4.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel4.setText("Jumlah yang ikut");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(400, 150, 100, 19);
+        btnout.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnout.setBorderPainted(false);
+        btnout.setContentAreaFilled(false);
+        getContentPane().add(btnout);
+        btnout.setBounds(30, 920, 160, 40);
 
-        isijmlorg.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                isijmlorgActionPerformed(evt);
-            }
-        });
-        getContentPane().add(isijmlorg);
-        isijmlorg.setBounds(510, 150, 30, 30);
-
-        jLabel5.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel5.setText("Total");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(400, 190, 29, 19);
+        btnkonfirmasi.setBorderPainted(false);
+        btnkonfirmasi.setContentAreaFilled(false);
+        getContentPane().add(btnkonfirmasi);
+        btnkonfirmasi.setBounds(210, 920, 790, 90);
+        getContentPane().add(isinama);
+        isinama.setBounds(420, 180, 540, 70);
+        getContentPane().add(isinik);
+        isinik.setBounds(420, 360, 540, 70);
+        getContentPane().add(isiharga);
+        isiharga.setBounds(420, 550, 540, 70);
+        getContentPane().add(isijumlah);
+        isijumlah.setBounds(420, 640, 540, 70);
         getContentPane().add(isitotal);
-        isitotal.setBounds(510, 190, 130, 30);
+        isitotal.setBounds(420, 720, 540, 70);
+        getContentPane().add(isikode);
+        isikode.setBounds(420, 810, 540, 70);
+        getContentPane().add(isinohp);
+        isinohp.setBounds(420, 270, 540, 70);
 
-        jButton2.setText("Pesan");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(400, 270, 67, 25);
+        cmboxtujuan.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        cmboxtujuan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pantai Ujung Pandaran", "Stadion 29 November", "Taman Kota Sampit", "Icon Patung Jelawat", "Citimall Sampit", "Water Park Sampit" }));
+        getContentPane().add(cmboxtujuan);
+        cmboxtujuan.setBounds(420, 460, 540, 60);
 
-        jLabel6.setText("Kode Pesanan");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(400, 230, 90, 16);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(510, 230, 6, 22);
-
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/lovepik-summer-fresh-background-image_401540304.png"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/TEMPAT PESAN.png"))); // NOI18N
         background.setText("jLabel1");
         getContentPane().add(background);
-        background.setBounds(0, 0, 800, 370);
+        background.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnkeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeranjangActionPerformed
         // TODO add your handling code here:
-        HomePelanggan hmplg = new HomePelanggan();
-        hmplg.setVisible(true);
-        
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnkeranjangActionPerformed
 
-    private void isijmlorgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isijmlorgActionPerformed
+    private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_isijmlorgActionPerformed
-
-    private void tmpwisataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tmpwisataActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tmpwisataActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_btnriwayatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,23 +192,22 @@ public class PesanPelanggan extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
-    private javax.swing.JTextField isihrg;
-    private javax.swing.JTextField isijmlorg;
-    private javax.swing.JTextField isinma;
+    private javax.swing.JButton btnhomepage;
+    private javax.swing.JButton btnkeranjang;
+    private javax.swing.JButton btnkonfirmasi;
+    private javax.swing.JButton btnobjekwisata;
+    private javax.swing.JButton btnout;
+    private javax.swing.JButton btnpemesanan;
+    private javax.swing.JButton btnpeta;
+    private javax.swing.JButton btnriwayat;
+    private javax.swing.JButton btntentang;
+    private javax.swing.JComboBox<String> cmboxtujuan;
+    private javax.swing.JTextField isiharga;
+    private javax.swing.JTextField isijumlah;
+    private javax.swing.JTextField isikode;
+    private javax.swing.JTextField isinama;
+    private javax.swing.JTextField isinik;
     private javax.swing.JTextField isinohp;
     private javax.swing.JTextField isitotal;
-    private javax.swing.JTextField isiumur;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel lblUsia;
-    private javax.swing.JLabel lblnama;
-    private javax.swing.JLabel lblnohp;
-    private javax.swing.JComboBox<String> tmpwisata;
     // End of variables declaration//GEN-END:variables
 }

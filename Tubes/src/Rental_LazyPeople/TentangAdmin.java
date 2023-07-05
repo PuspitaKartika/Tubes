@@ -9,12 +9,12 @@ package Rental_LazyPeople;
  *
  * @author mamaf
  */
-public class KonfirmasiPesanan extends javax.swing.JFrame {
+public class TentangAdmin extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public KonfirmasiPesanan() {
+    public TentangAdmin() {
         initComponents();
     }
 
@@ -27,144 +27,63 @@ public class KonfirmasiPesanan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblnama = new javax.swing.JLabel();
-        lblnohp = new javax.swing.JLabel();
-        lblUsia = new javax.swing.JLabel();
-        isinohp = new javax.swing.JTextField();
-        isiumur = new javax.swing.JTextField();
-        isinma = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        tmpwisata = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
-        isihrg = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        isijmlorg = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        isitotal = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        background = new javax.swing.JLabel();
+        btncekstock = new javax.swing.JButton();
+        btnpesanan = new javax.swing.JButton();
+        btntransaksi = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
+        btnout = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        lblnama.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        lblnama.setText("Nama");
-        getContentPane().add(lblnama);
-        lblnama.setBounds(110, 120, 40, 30);
+        btncekstock.setBorderPainted(false);
+        btncekstock.setContentAreaFilled(false);
+        btncekstock.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btncekstock);
+        btncekstock.setBounds(40, 250, 130, 50);
 
-        lblnohp.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        lblnohp.setText("No. HP");
-        getContentPane().add(lblnohp);
-        lblnohp.setBounds(110, 200, 50, 19);
+        btnpesanan.setBorderPainted(false);
+        btnpesanan.setContentAreaFilled(false);
+        btnpesanan.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btnpesanan);
+        btnpesanan.setBounds(40, 180, 120, 50);
 
-        lblUsia.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        lblUsia.setText("Usia");
-        getContentPane().add(lblUsia);
-        lblUsia.setBounds(110, 160, 24, 19);
-        getContentPane().add(isinohp);
-        isinohp.setBounds(200, 200, 150, 30);
-        getContentPane().add(isiumur);
-        isiumur.setBounds(200, 160, 40, 30);
-        getContentPane().add(isinma);
-        isinma.setBounds(200, 120, 150, 30);
+        btntransaksi.setBorderPainted(false);
+        btntransaksi.setContentAreaFilled(false);
+        btntransaksi.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btntransaksi);
+        btntransaksi.setBounds(40, 310, 120, 50);
 
-        jButton1.setText("<");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        btntentang.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btntentang);
+        btntentang.setBounds(40, 860, 120, 50);
+
+        btnout.setBorderPainted(false);
+        btnout.setContentAreaFilled(false);
+        btnout.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnoutActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(10, 10, 50, 25);
+        getContentPane().add(btnout);
+        btnout.setBounds(40, 920, 120, 50);
 
-        jLabel3.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel3.setText("Tujuan Wisata");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(110, 240, 90, 19);
-
-        tmpwisata.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Patung Jelawat", "Taman Kota Sampit", "Sampit Water Park", "Citimall Sampit", "Museum Kayu Sampit", "Kebun Raya Sampit", "Pantai Ujung Pandaran" }));
-        getContentPane().add(tmpwisata);
-        tmpwisata.setBounds(200, 240, 140, 22);
-
-        jLabel2.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel2.setText("Harga");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(400, 120, 33, 19);
-        getContentPane().add(isihrg);
-        isihrg.setBounds(500, 120, 140, 22);
-
-        jLabel4.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel4.setText("Jumlah yang ikut");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(400, 160, 100, 19);
-
-        isijmlorg.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                isijmlorgActionPerformed(evt);
-            }
-        });
-        getContentPane().add(isijmlorg);
-        isijmlorg.setBounds(500, 160, 30, 22);
-
-        jLabel5.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        jLabel5.setText("Total");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(400, 200, 29, 19);
-        getContentPane().add(isitotal);
-        isitotal.setBounds(500, 200, 130, 22);
-
-        jButton2.setText("Pesan");
-        getContentPane().add(jButton2);
-        jButton2.setBounds(400, 270, 67, 25);
-
-        jButton3.setText("Edit");
-        getContentPane().add(jButton3);
-        jButton3.setBounds(540, 270, 53, 25);
-
-        jButton4.setText("Hapus");
-        getContentPane().add(jButton4);
-        jButton4.setBounds(470, 270, 67, 25);
-
-        jLabel6.setText("Kode Pesanan");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(400, 240, 80, 16);
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(500, 240, 50, 22);
-
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/lovepik-summer-fresh-background-image_401540304.png"))); // NOI18N
-        background.setText("jLabel1");
-        getContentPane().add(background);
-        background.setBounds(0, 0, 800, 370);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/TentangPageAdmin.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
         // TODO add your handling code here:
-        HomePelanggan hmplg = new HomePelanggan();
-        hmplg.setVisible(true);
-        
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void isijmlorgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isijmlorgActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_isijmlorgActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_btnoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,14 +102,70 @@ public class KonfirmasiPesanan extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(KonfirmasiPesanan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(KonfirmasiPesanan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(KonfirmasiPesanan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(KonfirmasiPesanan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -203,32 +178,17 @@ public class KonfirmasiPesanan extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new KonfirmasiPesanan().setVisible(true);
+                new TentangAdmin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel background;
-    private javax.swing.JTextField isihrg;
-    private javax.swing.JTextField isijmlorg;
-    private javax.swing.JTextField isinma;
-    private javax.swing.JTextField isinohp;
-    private javax.swing.JTextField isitotal;
-    private javax.swing.JTextField isiumur;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel lblUsia;
-    private javax.swing.JLabel lblnama;
-    private javax.swing.JLabel lblnohp;
-    private javax.swing.JComboBox<String> tmpwisata;
+    private javax.swing.JButton btncekstock;
+    private javax.swing.JButton btnout;
+    private javax.swing.JButton btnpesanan;
+    private javax.swing.JButton btntentang;
+    private javax.swing.JButton btntransaksi;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -27,45 +27,28 @@ public class FrontGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        btnstart = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(810, 470));
+        setMinimumSize(new java.awt.Dimension(1000, 1000));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
+        setResizable(false);
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 0));
-        jLabel1.setText("TOUR SAMPIT LAZYPEOPLE");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(130, 80, 550, 70);
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jButton1.setText("START");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(300, 540, 370, 70);
 
-        btnstart.setFont(new java.awt.Font("Javanese Text", 0, 24)); // NOI18N
-        btnstart.setText("START");
-        btnstart.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnstartActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnstart);
-        btnstart.setBounds(280, 170, 210, 80);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/backgroundhome.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Front Page.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 810, 470);
+        jLabel2.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnstartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstartActionPerformed
-        // TODO add your handling code here:
-        PilihPeran plhprn = new PilihPeran();
-        plhprn.setVisible(true);
-        
-        this.dispose();
-    }//GEN-LAST:event_btnstartActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,8 +86,7 @@ public class FrontGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnstart;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

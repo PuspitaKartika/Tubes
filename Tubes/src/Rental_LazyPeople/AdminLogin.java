@@ -30,105 +30,33 @@ public class AdminLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        isiUsername = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        isiPassword = new javax.swing.JTextField();
-        btnLogin = new javax.swing.JButton();
+        btnloginadmin = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        btnpwadmin = new javax.swing.JPasswordField();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(800, 470));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 0));
-        jLabel1.setText("Tour Sampit LazyPeople");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(170, 60, 500, 60);
+        btnloginadmin.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnloginadmin.setBorderPainted(false);
+        btnloginadmin.setContentAreaFilled(false);
+        getContentPane().add(btnloginadmin);
+        btnloginadmin.setBounds(300, 630, 370, 70);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(390, 420, 390, 80);
+        getContentPane().add(btnpwadmin);
+        btnpwadmin.setBounds(390, 520, 390, 80);
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setText("Username Admin");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(160, 140, 140, 22);
-
-        isiUsername.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                isiUsernameFocusGained(evt);
-            }
-        });
-        isiUsername.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                isiUsernameActionPerformed(evt);
-            }
-        });
-        getContentPane().add(isiUsername);
-        isiUsername.setBounds(320, 140, 180, 30);
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setText("Password");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(160, 180, 90, 22);
-
-        isiPassword.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                isiPasswordFocusGained(evt);
-            }
-        });
-        isiPassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                isiPasswordActionPerformed(evt);
-            }
-        });
-        getContentPane().add(isiPassword);
-        isiPassword.setBounds(320, 180, 180, 30);
-
-        btnLogin.setText("LOGIN");
-        btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnLoginMouseClicked(evt);
-            }
-        });
-        getContentPane().add(btnLogin);
-        btnLogin.setBounds(410, 220, 90, 50);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/backgroundhome.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Login Admin.png"))); // NOI18N
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 810, 470);
+        jLabel5.setBounds(0, -20, 1000, 1030);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
-        // TODO add your handling code here:  
-    }//GEN-LAST:event_btnLoginMouseClicked
-
-    private void isiPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isiPasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_isiPasswordActionPerformed
-
-    private void isiUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isiUsernameActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_isiUsernameActionPerformed
-
-    private void isiUsernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_isiUsernameFocusGained
-        // TODO add your handling code here:
-        String username = isiUsername.getText();
-        if (username.equals("username")){
-            isiUsername.setText("");
-        }
-    }//GEN-LAST:event_isiUsernameFocusGained
-
-    private void isiPasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_isiPasswordFocusGained
-        // TODO add your handling code here:
-        String password = isiPassword.getText();
-        if (password.equals("password")){
-            isiPassword.setText("");
-        }
-    }//GEN-LAST:event_isiPasswordFocusGained
 
     /**
      * @param args the command line arguments
@@ -169,12 +97,9 @@ public class AdminLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JTextField isiPassword;
-    private javax.swing.JTextField isiUsername;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btnloginadmin;
+    private javax.swing.JPasswordField btnpwadmin;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

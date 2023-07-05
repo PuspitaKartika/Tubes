@@ -9,12 +9,12 @@ package Rental_LazyPeople;
  *
  * @author mamaf
  */
-public class HomeAdmin extends javax.swing.JFrame {
+public class TransaksiAdmin extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public HomeAdmin() {
+    public TransaksiAdmin() {
         initComponents();
     }
 
@@ -27,98 +27,74 @@ public class HomeAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnpesan = new javax.swing.JButton();
-        btnobjek = new javax.swing.JButton();
-        btnpeta = new javax.swing.JButton();
-        btnriwayat = new javax.swing.JButton();
-        lbljelawat = new javax.swing.JLabel();
+        isikodepsn = new javax.swing.JTextField();
+        btncari = new javax.swing.JButton();
+        btnpesanan = new javax.swing.JButton();
+        btntransaksi = new javax.swing.JButton();
+        btncekstock = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
+        btnout = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(800, 370));
+        setMinimumSize(new java.awt.Dimension(1000, 1000));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
+        getContentPane().add(isikodepsn);
+        isikodepsn.setBounds(260, 180, 550, 80);
 
-        btnpesan.setText("Pesan");
-        btnpesan.addActionListener(new java.awt.event.ActionListener() {
+        btncari.setBorderPainted(false);
+        btncari.setContentAreaFilled(false);
+        getContentPane().add(btncari);
+        btncari.setBounds(810, 180, 130, 80);
+
+        btnpesanan.setBorderPainted(false);
+        btnpesanan.setContentAreaFilled(false);
+        btnpesanan.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btnpesanan);
+        btnpesanan.setBounds(40, 180, 120, 50);
+
+        btntransaksi.setBorderPainted(false);
+        btntransaksi.setContentAreaFilled(false);
+        btntransaksi.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btntransaksi);
+        btntransaksi.setBounds(40, 310, 120, 50);
+
+        btncekstock.setBorderPainted(false);
+        btncekstock.setContentAreaFilled(false);
+        btncekstock.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btncekstock);
+        btncekstock.setBounds(40, 250, 130, 50);
+
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        btntentang.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(btntentang);
+        btntentang.setBounds(40, 860, 120, 50);
+
+        btnout.setBorderPainted(false);
+        btnout.setContentAreaFilled(false);
+        btnout.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnpesanActionPerformed(evt);
+                btnoutActionPerformed(evt);
             }
         });
-        getContentPane().add(btnpesan);
-        btnpesan.setBounds(60, 110, 140, 60);
+        getContentPane().add(btnout);
+        btnout.setBounds(40, 920, 120, 50);
 
-        btnobjek.setText("Objek Wisata");
-        getContentPane().add(btnobjek);
-        btnobjek.setBounds(240, 110, 140, 60);
-
-        btnpeta.setText("Peta Kota");
-        btnpeta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnpetaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnpeta);
-        btnpeta.setBounds(420, 110, 140, 60);
-
-        btnriwayat.setText("Riwayat Transaksi");
-        btnriwayat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnriwayatActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnriwayat);
-        btnriwayat.setBounds(590, 110, 140, 60);
-
-        lbljelawat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/monumen-ikan-jelawat.png"))); // NOI18N
-        lbljelawat.setText("jLabel1");
-        getContentPane().add(lbljelawat);
-        lbljelawat.setBounds(60, 180, 200, 100);
-
-        jLabel1.setFont(new java.awt.Font("Segoe Print", 0, 13)); // NOI18N
-        jLabel1.setText("Patung atau Tugu Jelawat ini adalah Tugu yang berbentuk ikan ");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Home Admin.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(270, 180, 450, 20);
-
-        jLabel2.setFont(new java.awt.Font("Segoe Print", 0, 13)); // NOI18N
-        jLabel2.setText("yang menjadi ciri khas daerah sungai Mentaya ");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(270, 200, 330, 24);
-
-        jLabel3.setText("TES123");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(280, 240, 70, 20);
-
-        jButton1.setText("START");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(350, 240, 79, 25);
-
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/lovepik-summer-fresh-background-image_401540304.png"))); // NOI18N
-        background.setText("jLabel1");
-        getContentPane().add(background);
-        background.setBounds(0, 0, 800, 370);
+        jLabel1.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnpetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpetaActionPerformed
+    private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnpetaActionPerformed
-
-    private void btnpesanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpesanActionPerformed
-        // TODO add your handling code here:
-        PesanPelanggan psnplg = new PesanPelanggan();
-        psnplg.setVisible(true);
-        
-        this.dispose();
-    }//GEN-LAST:event_btnpesanActionPerformed
-
-    private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnriwayatActionPerformed
+    }//GEN-LAST:event_btnoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,14 +113,18 @@ public class HomeAdmin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HomeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TransaksiAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HomeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TransaksiAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HomeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TransaksiAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HomeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TransaksiAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -153,21 +133,19 @@ public class HomeAdmin extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new HomeAdmin().setVisible(true);
+                new TransaksiAdmin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel background;
-    private javax.swing.JButton btnobjek;
-    private javax.swing.JButton btnpesan;
-    private javax.swing.JButton btnpeta;
-    private javax.swing.JButton btnriwayat;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btncari;
+    private javax.swing.JButton btncekstock;
+    private javax.swing.JButton btnout;
+    private javax.swing.JButton btnpesanan;
+    private javax.swing.JButton btntentang;
+    private javax.swing.JButton btntransaksi;
+    private javax.swing.JTextField isikodepsn;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel lbljelawat;
     // End of variables declaration//GEN-END:variables
 }

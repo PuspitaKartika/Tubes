@@ -9,12 +9,12 @@ package Rental_LazyPeople;
  *
  * @author mamaf
  */
-public class HomePelanggan extends javax.swing.JFrame {
+public class TentangPagePelanggan extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public HomePelanggan() {
+    public TentangPagePelanggan() {
         initComponents();
     }
 
@@ -27,84 +27,111 @@ public class HomePelanggan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnpesan = new javax.swing.JButton();
-        btnobjek = new javax.swing.JButton();
-        btnpeta = new javax.swing.JButton();
-        btnriwayat = new javax.swing.JButton();
-        lbljelawat = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        background = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        btnriwayat = new javax.swing.JButton();
+        btnhomepage = new javax.swing.JButton();
+        btnpemesanan = new javax.swing.JButton();
+        btnpeta = new javax.swing.JButton();
+        btnkeranjang = new javax.swing.JButton();
+        btnobjekwisata = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
+        btnout = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(800, 370));
+        setMinimumSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
-        btnpesan.setText("Pesan");
-        btnpesan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnpesanActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnpesan);
-        btnpesan.setBounds(60, 110, 140, 60);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/ujung_pandaran.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(250, 520, 710, 210);
 
-        btnobjek.setText("Objek Wisata");
-        getContentPane().add(btnobjek);
-        btnobjek.setBounds(240, 110, 140, 60);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Taman-Kota-Sampit.jpg"))); // NOI18N
+        jLabel2.setText("jLabel1");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(250, 780, 710, 210);
 
-        btnpeta.setText("Peta Kota");
-        btnpeta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnpetaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnpeta);
-        btnpeta.setBounds(420, 110, 140, 60);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/monumen-ikan-jelawat.png"))); // NOI18N
+        jLabel4.setText("jLabel1");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(250, 240, 720, 210);
 
-        btnriwayat.setText("Riwayat Transaksi");
+        btnriwayat.setBackground(new java.awt.Color(255, 255, 255));
+        btnriwayat.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnriwayat.setBorderPainted(false);
+        btnriwayat.setContentAreaFilled(false);
+        btnriwayat.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnriwayat.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnriwayat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnriwayatActionPerformed(evt);
             }
         });
         getContentPane().add(btnriwayat);
-        btnriwayat.setBounds(590, 110, 140, 60);
+        btnriwayat.setBounds(40, 510, 160, 60);
 
-        lbljelawat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/monumen-ikan-jelawat.png"))); // NOI18N
-        lbljelawat.setText("jLabel1");
-        getContentPane().add(lbljelawat);
-        lbljelawat.setBounds(60, 180, 200, 100);
+        btnhomepage.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnhomepage.setBorderPainted(false);
+        btnhomepage.setContentAreaFilled(false);
+        getContentPane().add(btnhomepage);
+        btnhomepage.setBounds(40, 200, 160, 40);
 
-        jLabel1.setFont(new java.awt.Font("Segoe Print", 0, 13)); // NOI18N
-        jLabel1.setText("Patung atau Tugu Jelawat ini adalah Tugu yang berbentuk ikan ");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(270, 180, 450, 20);
+        btnpemesanan.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpemesanan.setBorderPainted(false);
+        btnpemesanan.setContentAreaFilled(false);
+        getContentPane().add(btnpemesanan);
+        btnpemesanan.setBounds(40, 260, 160, 40);
 
-        jLabel2.setFont(new java.awt.Font("Segoe Print", 0, 13)); // NOI18N
-        jLabel2.setText("yang menjadi ciri khas daerah sungai Mentaya ");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(270, 200, 330, 24);
+        btnpeta.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpeta.setBorderPainted(false);
+        btnpeta.setContentAreaFilled(false);
+        getContentPane().add(btnpeta);
+        btnpeta.setBounds(40, 450, 160, 50);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/lovepik-summer-fresh-background-image_401540304.png"))); // NOI18N
-        background.setText("jLabel1");
-        getContentPane().add(background);
-        background.setBounds(0, 0, 800, 370);
+        btnkeranjang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnkeranjang.setBorderPainted(false);
+        btnkeranjang.setContentAreaFilled(false);
+        btnkeranjang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeranjangActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnkeranjang);
+        btnkeranjang.setBounds(40, 330, 160, 40);
+
+        btnobjekwisata.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnobjekwisata.setBorderPainted(false);
+        btnobjekwisata.setContentAreaFilled(false);
+        getContentPane().add(btnobjekwisata);
+        btnobjekwisata.setBounds(40, 390, 160, 40);
+
+        btntentang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        getContentPane().add(btntentang);
+        btntentang.setBounds(30, 870, 160, 40);
+
+        btnout.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnout.setBorderPainted(false);
+        btnout.setContentAreaFilled(false);
+        getContentPane().add(btnout);
+        btnout.setBounds(30, 920, 160, 40);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Main Page.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnpetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpetaActionPerformed
+    private void btnkeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeranjangActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnpetaActionPerformed
-
-    private void btnpesanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpesanActionPerformed
-        // TODO add your handling code here:
-        PesanPelanggan psnplg = new PesanPelanggan();
-        psnplg.setVisible(true);
-        
-        this.dispose();
-    }//GEN-LAST:event_btnpesanActionPerformed
+    }//GEN-LAST:event_btnkeranjangActionPerformed
 
     private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
         // TODO add your handling code here:
@@ -127,33 +154,39 @@ public class HomePelanggan extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HomePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangPagePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HomePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangPagePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HomePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangPagePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HomePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TentangPagePelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new HomePelanggan().setVisible(true);
+                new TentangPagePelanggan().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel background;
-    private javax.swing.JButton btnobjek;
-    private javax.swing.JButton btnpesan;
+    private javax.swing.JButton btnhomepage;
+    private javax.swing.JButton btnkeranjang;
+    private javax.swing.JButton btnobjekwisata;
+    private javax.swing.JButton btnout;
+    private javax.swing.JButton btnpemesanan;
     private javax.swing.JButton btnpeta;
     private javax.swing.JButton btnriwayat;
+    private javax.swing.JButton btntentang;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel lbljelawat;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
