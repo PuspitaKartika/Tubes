@@ -83,7 +83,7 @@ public class TentangAdmin extends javax.swing.JFrame {
 
     private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
         // TODO add your handling code here:
-        System.exit(0):
+        System.exit(0);
     }//GEN-LAST:event_btnoutActionPerformed
 
     /**

@@ -17,10 +17,10 @@ public class AdminLogin extends javax.swing.JFrame {
         initComponents();
     }
 
-    void bersih(){
-        isiUsername.setText("username");
-        isiPassword.setText("password");
-    }
+//    void bersih(){
+//        isiUsername.setText("username");
+//        isiPassword.setText("password");
+//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
