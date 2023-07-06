@@ -3,9 +3,9 @@ package database;
 import java.sql.*;
 
 public class Database {
-    private static Connection c;
-    private static Statement s;
-    private static ResultSet rs;
+    public static Connection c;
+    public static Statement s;
+    public static ResultSet rs;
 
     public static void openDb() throws ClassNotFoundException, SQLException {
         String URL = "jdbc:mysql://localhost:3306/m_2_satourism";
@@ -18,7 +18,7 @@ public class Database {
     }
 
     //tutup database
-    private static void closeDb(){
+    public static void closeDb(){
         try{
             rs.close();
             s.close();
