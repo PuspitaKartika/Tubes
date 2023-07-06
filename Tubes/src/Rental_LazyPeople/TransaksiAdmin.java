@@ -34,6 +34,8 @@ public class TransaksiAdmin extends javax.swing.JFrame {
         btncekstock = new javax.swing.JButton();
         btntentang = new javax.swing.JButton();
         btnout = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -83,6 +85,22 @@ public class TransaksiAdmin extends javax.swing.JFrame {
         getContentPane().add(btnout);
         btnout.setBounds(40, 920, 120, 50);
 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(260, 270, 680, 402);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Home Admin.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
@@ -94,6 +112,7 @@ public class TransaksiAdmin extends javax.swing.JFrame {
 
     private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnoutActionPerformed
 
     /**
@@ -147,5 +166,7 @@ public class TransaksiAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btntransaksi;
     private javax.swing.JTextField isikodepsn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

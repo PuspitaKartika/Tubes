@@ -106,6 +106,11 @@ public class PetaKota extends javax.swing.JFrame {
         btnout.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         btnout.setBorderPainted(false);
         btnout.setContentAreaFilled(false);
+        btnout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnoutActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnout);
         btnout.setBounds(30, 920, 160, 40);
 
@@ -124,6 +129,11 @@ public class PetaKota extends javax.swing.JFrame {
     private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnriwayatActionPerformed
+
+    private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnoutActionPerformed
 
     /**
      * @param args the command line arguments
