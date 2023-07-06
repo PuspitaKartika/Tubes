@@ -33,6 +33,14 @@ public class Keranjang extends javax.swing.JFrame {
         btnpesan = new javax.swing.JButton();
         btnedit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        btnhomepage = new javax.swing.JButton();
+        btnpemesanan = new javax.swing.JButton();
+        btnkeranjang = new javax.swing.JButton();
+        btnobjekwisata = new javax.swing.JButton();
+        btnpeta = new javax.swing.JButton();
+        btnriwayat = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
+        btnout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1000, 1000));
@@ -74,9 +82,78 @@ public class Keranjang extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 1000, 1000);
 
+        btnhomepage.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnhomepage.setBorderPainted(false);
+        btnhomepage.setContentAreaFilled(false);
+        getContentPane().add(btnhomepage);
+        btnhomepage.setBounds(30, 190, 160, 40);
+
+        btnpemesanan.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpemesanan.setBorderPainted(false);
+        btnpemesanan.setContentAreaFilled(false);
+        getContentPane().add(btnpemesanan);
+        btnpemesanan.setBounds(30, 250, 160, 40);
+
+        btnkeranjang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnkeranjang.setBorderPainted(false);
+        btnkeranjang.setContentAreaFilled(false);
+        btnkeranjang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeranjangActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnkeranjang);
+        btnkeranjang.setBounds(30, 320, 160, 40);
+
+        btnobjekwisata.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnobjekwisata.setBorderPainted(false);
+        btnobjekwisata.setContentAreaFilled(false);
+        getContentPane().add(btnobjekwisata);
+        btnobjekwisata.setBounds(30, 380, 160, 40);
+
+        btnpeta.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpeta.setBorderPainted(false);
+        btnpeta.setContentAreaFilled(false);
+        getContentPane().add(btnpeta);
+        btnpeta.setBounds(30, 440, 160, 50);
+
+        btnriwayat.setBackground(new java.awt.Color(255, 255, 255));
+        btnriwayat.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnriwayat.setBorderPainted(false);
+        btnriwayat.setContentAreaFilled(false);
+        btnriwayat.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnriwayat.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnriwayat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnriwayatActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnriwayat);
+        btnriwayat.setBounds(30, 500, 160, 60);
+
+        btntentang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        getContentPane().add(btntentang);
+        btntentang.setBounds(20, 880, 160, 40);
+
+        btnout.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnout.setBorderPainted(false);
+        btnout.setContentAreaFilled(false);
+        getContentPane().add(btnout);
+        btnout.setBounds(20, 930, 160, 40);
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnkeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeranjangActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnkeranjangActionPerformed
+
+    private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnriwayatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,7 +208,15 @@ public class Keranjang extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnedit;
     private javax.swing.JButton btnhapus;
+    private javax.swing.JButton btnhomepage;
+    private javax.swing.JButton btnkeranjang;
+    private javax.swing.JButton btnobjekwisata;
+    private javax.swing.JButton btnout;
+    private javax.swing.JButton btnpemesanan;
     private javax.swing.JButton btnpesan;
+    private javax.swing.JButton btnpeta;
+    private javax.swing.JButton btnriwayat;
+    private javax.swing.JButton btntentang;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

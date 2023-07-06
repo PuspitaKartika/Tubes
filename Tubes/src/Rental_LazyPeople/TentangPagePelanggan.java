@@ -27,9 +27,6 @@ public class TentangPagePelanggan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         btnriwayat = new javax.swing.JButton();
         btnhomepage = new javax.swing.JButton();
         btnpemesanan = new javax.swing.JButton();
@@ -44,21 +41,6 @@ public class TentangPagePelanggan extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/ujung_pandaran.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(250, 520, 710, 210);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Taman-Kota-Sampit.jpg"))); // NOI18N
-        jLabel2.setText("jLabel1");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(250, 780, 710, 210);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/monumen-ikan-jelawat.png"))); // NOI18N
-        jLabel4.setText("jLabel1");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(250, 240, 720, 210);
-
         btnriwayat.setBackground(new java.awt.Color(255, 255, 255));
         btnriwayat.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         btnriwayat.setBorderPainted(false);
@@ -71,7 +53,7 @@ public class TentangPagePelanggan extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnriwayat);
-        btnriwayat.setBounds(40, 510, 160, 60);
+        btnriwayat.setBounds(40, 500, 160, 70);
 
         btnhomepage.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         btnhomepage.setBorderPainted(false);
@@ -117,10 +99,15 @@ public class TentangPagePelanggan extends javax.swing.JFrame {
         btnout.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         btnout.setBorderPainted(false);
         btnout.setContentAreaFilled(false);
+        btnout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnoutActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnout);
         btnout.setBounds(30, 920, 160, 40);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Main Page.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Tentang.png"))); // NOI18N
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 0, 1000, 1000);
@@ -136,6 +123,11 @@ public class TentangPagePelanggan extends javax.swing.JFrame {
     private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnriwayatActionPerformed
+
+    private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,9 +176,6 @@ public class TentangPagePelanggan extends javax.swing.JFrame {
     private javax.swing.JButton btnpeta;
     private javax.swing.JButton btnriwayat;
     private javax.swing.JButton btntentang;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
