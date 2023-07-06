@@ -30,105 +30,41 @@ public class PelangganLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        isiusername = new javax.swing.JTextField();
+        isipassword = new javax.swing.JPasswordField();
+        btnlogin = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        isiUsername = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        isiPassword = new javax.swing.JTextField();
-        btnLogin = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(810, 470));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
+        getContentPane().add(isiusername);
+        isiusername.setBounds(400, 430, 380, 70);
+        getContentPane().add(isipassword);
+        isipassword.setBounds(400, 530, 380, 70);
 
-        jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(153, 153, 0));
-        jLabel1.setText("Tour Sampit LazyPeople");
+        btnlogin.setBorderPainted(false);
+        btnlogin.setContentAreaFilled(false);
+        btnlogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnloginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnlogin);
+        btnlogin.setBounds(300, 630, 370, 70);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Login Username.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(170, 60, 500, 60);
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setText("Username");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(200, 140, 100, 22);
-
-        isiUsername.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                isiUsernameFocusGained(evt);
-            }
-        });
-        isiUsername.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                isiUsernameActionPerformed(evt);
-            }
-        });
-        getContentPane().add(isiUsername);
-        isiUsername.setBounds(320, 140, 180, 30);
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setText("Password");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(200, 180, 90, 22);
-
-        isiPassword.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                isiPasswordFocusGained(evt);
-            }
-        });
-        isiPassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                isiPasswordActionPerformed(evt);
-            }
-        });
-        getContentPane().add(isiPassword);
-        isiPassword.setBounds(320, 180, 180, 30);
-
-        btnLogin.setText("LOGIN");
-        btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnLoginMouseClicked(evt);
-            }
-        });
-        getContentPane().add(btnLogin);
-        btnLogin.setBounds(410, 220, 90, 50);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/backgroundhome.png"))); // NOI18N
-        jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(0, 0, 810, 470);
+        jLabel1.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
-        // TODO add your handling code here:  
-    }//GEN-LAST:event_btnLoginMouseClicked
-
-    private void isiPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isiPasswordActionPerformed
+    private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_isiPasswordActionPerformed
-
-    private void isiUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isiUsernameActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_isiUsernameActionPerformed
-
-    private void isiUsernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_isiUsernameFocusGained
-        // TODO add your handling code here:
-        String username = isiUsername.getText();
-        if (username.equals("username")){
-            isiUsername.setText("");
-        }
-    }//GEN-LAST:event_isiUsernameFocusGained
-
-    private void isiPasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_isiPasswordFocusGained
-        // TODO add your handling code here:
-        String password = isiPassword.getText();
-        if (password.equals("password")){
-            isiPassword.setText("");
-        }
-    }//GEN-LAST:event_isiPasswordFocusGained
+    }//GEN-LAST:event_btnloginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,12 +103,9 @@ public class PelangganLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JTextField isiPassword;
-    private javax.swing.JTextField isiUsername;
+    private javax.swing.JButton btnlogin;
+    private javax.swing.JPasswordField isipassword;
+    private javax.swing.JTextField isiusername;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }

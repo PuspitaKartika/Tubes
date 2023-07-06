@@ -27,41 +27,109 @@ public class ObjekWisataPelanggan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        background = new javax.swing.JLabel();
+        btngotopesan = new javax.swing.JButton();
+        btngotopeta = new javax.swing.JButton();
+        btnhomepage = new javax.swing.JButton();
+        btnpemesanan = new javax.swing.JButton();
+        btnkeranjang = new javax.swing.JButton();
+        btnobjekwisata = new javax.swing.JButton();
+        btnpeta = new javax.swing.JButton();
+        btnriwayat = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
+        btnout = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 370));
         getContentPane().setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
-        jLabel3.setText("OBJEK WISATA SAMPIT");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(300, 60, 210, 40);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(300, 110, 220, 30);
+        btngotopesan.setBorderPainted(false);
+        btngotopesan.setContentAreaFilled(false);
+        getContentPane().add(btngotopesan);
+        btngotopesan.setBounds(610, 910, 390, 90);
 
-        jLabel1.setText("SEARCH");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(220, 120, 50, 16);
+        btngotopeta.setBorderPainted(false);
+        btngotopeta.setContentAreaFilled(false);
+        getContentPane().add(btngotopeta);
+        btngotopeta.setBounds(220, 910, 390, 90);
 
-        jLabel2.setText("Deskripsi Singkat Wisata");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 180, 150, 16);
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(120, 200, 450, 80);
+        btnhomepage.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnhomepage.setBorderPainted(false);
+        btnhomepage.setContentAreaFilled(false);
+        getContentPane().add(btnhomepage);
+        btnhomepage.setBounds(40, 180, 160, 40);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/lovepik-summer-fresh-background-image_401540304.png"))); // NOI18N
-        background.setText("jLabel1");
-        getContentPane().add(background);
-        background.setBounds(0, 0, 800, 370);
+        btnpemesanan.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpemesanan.setBorderPainted(false);
+        btnpemesanan.setContentAreaFilled(false);
+        getContentPane().add(btnpemesanan);
+        btnpemesanan.setBounds(40, 240, 160, 40);
+
+        btnkeranjang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnkeranjang.setBorderPainted(false);
+        btnkeranjang.setContentAreaFilled(false);
+        btnkeranjang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeranjangActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnkeranjang);
+        btnkeranjang.setBounds(40, 310, 160, 40);
+
+        btnobjekwisata.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnobjekwisata.setBorderPainted(false);
+        btnobjekwisata.setContentAreaFilled(false);
+        getContentPane().add(btnobjekwisata);
+        btnobjekwisata.setBounds(40, 370, 160, 40);
+
+        btnpeta.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnpeta.setBorderPainted(false);
+        btnpeta.setContentAreaFilled(false);
+        getContentPane().add(btnpeta);
+        btnpeta.setBounds(40, 430, 160, 50);
+
+        btnriwayat.setBackground(new java.awt.Color(255, 255, 255));
+        btnriwayat.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnriwayat.setBorderPainted(false);
+        btnriwayat.setContentAreaFilled(false);
+        btnriwayat.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnriwayat.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnriwayat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnriwayatActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnriwayat);
+        btnriwayat.setBounds(40, 490, 160, 60);
+
+        btntentang.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        getContentPane().add(btntentang);
+        btntentang.setBounds(30, 870, 160, 40);
+
+        btnout.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btnout.setBorderPainted(false);
+        btnout.setContentAreaFilled(false);
+        getContentPane().add(btnout);
+        btnout.setBounds(30, 920, 160, 40);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Tempat.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnkeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeranjangActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnkeranjangActionPerformed
+
+    private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnriwayatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -102,11 +170,16 @@ public class ObjekWisataPelanggan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel background;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton btngotopesan;
+    private javax.swing.JButton btngotopeta;
+    private javax.swing.JButton btnhomepage;
+    private javax.swing.JButton btnkeranjang;
+    private javax.swing.JButton btnobjekwisata;
+    private javax.swing.JButton btnout;
+    private javax.swing.JButton btnpemesanan;
+    private javax.swing.JButton btnpeta;
+    private javax.swing.JButton btnriwayat;
+    private javax.swing.JButton btntentang;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

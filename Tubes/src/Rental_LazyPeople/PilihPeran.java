@@ -27,68 +27,31 @@ public class PilihPeran extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        btnadmin = new javax.swing.JButton();
-        btnpelanggan = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        btnloginpelanggan = new javax.swing.JButton();
+        btnloginadmin = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(810, 470));
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Segoe Print", 1, 24)); // NOI18N
-        jLabel3.setText("PILIH PERAN");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(280, 90, 200, 60);
+        btnloginpelanggan.setBorderPainted(false);
+        btnloginpelanggan.setContentAreaFilled(false);
+        getContentPane().add(btnloginpelanggan);
+        btnloginpelanggan.setBounds(300, 460, 370, 70);
 
-        btnadmin.setText("ADMIN");
-        btnadmin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnadminActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnadmin);
-        btnadmin.setBounds(190, 140, 71, 25);
+        btnloginadmin.setBorderPainted(false);
+        btnloginadmin.setContentAreaFilled(false);
+        getContentPane().add(btnloginadmin);
+        btnloginadmin.setBounds(290, 570, 390, 70);
 
-        btnpelanggan.setText("PELANGGAN");
-        btnpelanggan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnpelangganActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnpelanggan);
-        btnpelanggan.setBounds(440, 140, 101, 25);
-
-        jLabel2.setFont(new java.awt.Font("Segoe Print", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 0));
-        jLabel2.setText("Tour Sampit LazyPeople");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(220, 40, 300, 60);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/backgroundhome.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background/Pilih Peran.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 740, 370);
+        jLabel1.setBounds(0, 0, 1000, 1000);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnadminActionPerformed
-        // TODO add your handling code here:
-       AdminLogin admlgn = new AdminLogin();
-       admlgn.setVisible(true);
-        
-       this.dispose();
-    }//GEN-LAST:event_btnadminActionPerformed
-
-    private void btnpelangganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpelangganActionPerformed
-        // TODO add your handling code here:
-        PelangganLogin lgn = new PelangganLogin();
-        lgn.setVisible(true);
-        
-        this.dispose();
-    }//GEN-LAST:event_btnpelangganActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,10 +89,8 @@ public class PilihPeran extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnadmin;
-    private javax.swing.JButton btnpelanggan;
+    private javax.swing.JButton btnloginadmin;
+    private javax.swing.JButton btnloginpelanggan;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
