@@ -84,6 +84,7 @@ public class PesanPelanggan extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
         btnhomepage.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N

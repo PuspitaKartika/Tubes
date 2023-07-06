@@ -42,6 +42,7 @@ public class ObjekWisataPelanggan extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 370));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
 
         btngotopesan.setBorderPainted(false);

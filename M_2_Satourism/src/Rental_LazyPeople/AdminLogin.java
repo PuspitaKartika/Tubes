@@ -5,22 +5,31 @@
  */
 package Rental_LazyPeople;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 /**
  *
  * @author mamaf
  */
 public class AdminLogin extends javax.swing.JFrame {
-    /**
-     * Creates new form Login
-     */
+    private PreparedStatement stat;
+    private ResultSet rs;
+    Koneksi k = new Koneksi();
+    
     public AdminLogin() {
         initComponents();
+        k.connect();
+    }
+    class Pelanggan{
+    String usn_pelanggan, pw_pelanggan;
+        
+    public Pelanggan(){
+        this.usn_pelanggan = isiusername.getText();
+        this.pw_pelanggan = isipassword.getText();
+        }
     }
 
-//    void bersih(){
-//        isiUsername.setText("username");
-//        isiPassword.setText("password");
-//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,8 +40,8 @@ public class AdminLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         btnloginadmin = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        btnpwadmin = new javax.swing.JPasswordField();
+        isiusername = new javax.swing.JTextField();
+        isipassword = new javax.swing.JPasswordField();
         btnout = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
@@ -44,10 +53,10 @@ public class AdminLogin extends javax.swing.JFrame {
         btnloginadmin.setContentAreaFilled(false);
         getContentPane().add(btnloginadmin);
         btnloginadmin.setBounds(300, 630, 370, 70);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(390, 420, 390, 80);
-        getContentPane().add(btnpwadmin);
-        btnpwadmin.setBounds(390, 520, 390, 80);
+        getContentPane().add(isiusername);
+        isiusername.setBounds(390, 420, 390, 80);
+        getContentPane().add(isipassword);
+        isipassword.setBounds(390, 520, 390, 80);
 
         btnout.setText("<");
         btnout.addActionListener(new java.awt.event.ActionListener() {
@@ -114,8 +123,8 @@ public class AdminLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnloginadmin;
     private javax.swing.JButton btnout;
-    private javax.swing.JPasswordField btnpwadmin;
+    private javax.swing.JPasswordField isipassword;
+    private javax.swing.JTextField isiusername;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

@@ -80,7 +80,7 @@ public class PilihPeran extends javax.swing.JFrame {
 
     private void btnloginadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginadminActionPerformed
         // TODO add your handling code here:
-        new Rental_LazyPeople.AdminLogin.AdminLogin().setVisible(true);
+        new Rental_LazyPeople.AdminLogin().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnloginadminActionPerformed
 

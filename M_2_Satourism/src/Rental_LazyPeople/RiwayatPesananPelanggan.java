@@ -78,6 +78,7 @@ public class RiwayatPesananPelanggan extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 370));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1000, 1000));
         getContentPane().setLayout(null);
         getContentPane().add(isikodepesanan);
         isikodepesanan.setBounds(260, 180, 550, 80);
