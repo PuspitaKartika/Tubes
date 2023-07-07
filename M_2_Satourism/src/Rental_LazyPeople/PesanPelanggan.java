@@ -20,19 +20,19 @@ public class PesanPelanggan extends javax.swing.JFrame {
     private PreparedStatement stat;
     private ResultSet rs;
     Koneksi k = new Koneksi();
-    
+
     public PesanPelanggan() {
         initComponents();
         k.connect();
 
     }
-    
-    class db_aplikasi extends PesanPelanggan{
+
+    class db_aplikasi extends PesanPelanggan {
         int nohp_pelanggan, kode_pesanan, harga_wisata, jumlah_orang, bayar_pesanan, kembalian_pesanan;
         String nama_pelanggan, tujuan_wisata;
         java.time.LocalDate tanggal_transaksi;
-        
-        public db_aplikasi(){
+
+        public db_aplikasi() {
             this.kode_pesanan = Integer.parseInt(isibayar.getText());
             this.nama_pelanggan = isinama.getText();
             this.tujuan_wisata = cmboxtujuan.getSelectedItem().toString();
@@ -41,24 +41,26 @@ public class PesanPelanggan extends javax.swing.JFrame {
             this.tanggal_transaksi = java.time.LocalDate.parse(isitanggal.getText());
         }
     }
-    
-    public void hitungTotalHarga() {
-    try {
-        this.stat = k.getCon().prepareStatement("SELECT SUM(total_harga) AS total FROM db_keranjang");
-        this.rs = this.stat.executeQuery();
 
-        if (rs.next()) {
-            int total_pesanan = rs.getInt("total");
-            
-            // Update field TotalHargaB dengan total harga
-            TotalHargaB.setText(String.valueOf(totalHarga));
+    public void hitungTotalHarga() {
+        try {
+            this.stat = k.getCon().prepareStatement("SELECT SUM(total_harga) AS total FROM db_keranjang");
+            this.rs = this.stat.executeQuery();
+
+            if (rs.next()) {
+                int total_pesanan = rs.getInt("total");
+
+                // Update field TotalHargaB dengan total harga
+                // TotalHargaB.setText(String.valueOf(totalHarga));
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
-    } catch (Exception e) {
-        JOptionPane.showMessageDialog(null, e.getMessage());
     }
-}
+
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         btnhomepage = new javax.swing.JButton();
@@ -200,7 +202,9 @@ public class PesanPelanggan extends javax.swing.JFrame {
         isinohp.setBounds(450, 250, 540, 60);
 
         cmboxtujuan.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        cmboxtujuan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pantai Ujung Pandaran", "Stadion 29 November", "Taman Kota Sampit", "Icon Patung Jelawat", "Citimall Sampit", "Water Park Sampit" }));
+        cmboxtujuan.setModel(
+                new javax.swing.DefaultComboBoxModel<>(new String[] { "Pantai Ujung Pandaran", "Stadion 29 November",
+                        "Taman Kota Sampit", "Icon Patung Jelawat", "Citimall Sampit", "Water Park Sampit" }));
         getContentPane().add(cmboxtujuan);
         cmboxtujuan.setBounds(450, 330, 540, 60);
         getContentPane().add(isikembalian);
@@ -217,57 +221,61 @@ public class PesanPelanggan extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnkeranjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeranjangActionPerformed
+    private void btnkeranjangActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnkeranjangActionPerformed
         // TODO add your handling code here:
         new Keranjang().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnkeranjangActionPerformed
+    }// GEN-LAST:event_btnkeranjangActionPerformed
 
-    private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnriwayatActionPerformed
+    private void btnriwayatActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnriwayatActionPerformed
         // TODO add your handling code here:
         new RiwayatPesananPelanggan().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnriwayatActionPerformed
+    }// GEN-LAST:event_btnriwayatActionPerformed
 
-    private void btnhomepageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhomepageActionPerformed
+    private void btnhomepageActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnhomepageActionPerformed
         // TODO add your handling code here:
         new HomePelanggan().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnhomepageActionPerformed
+    }// GEN-LAST:event_btnhomepageActionPerformed
 
-    private void btnpetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpetaActionPerformed
+    private void btnpetaActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnpetaActionPerformed
         // TODO add your handling code here:
         new PetaKota().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnpetaActionPerformed
+    }// GEN-LAST:event_btnpetaActionPerformed
 
-    private void btntentangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntentangActionPerformed
+    private void btntentangActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btntentangActionPerformed
         // TODO add your handling code here:
         new TentangPagePelanggan().setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btntentangActionPerformed
+    }// GEN-LAST:event_btntentangActionPerformed
 
-    private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoutActionPerformed
+    private void btnoutActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnoutActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_btnoutActionPerformed
+    }// GEN-LAST:event_btnoutActionPerformed
 
-    private void isinamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isinamaActionPerformed
+    private void isinamaActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_isinamaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_isinamaActionPerformed
+    }// GEN-LAST:event_isinamaActionPerformed
 
-    private void isinohpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isinohpActionPerformed
+    private void isinohpActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_isinohpActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_isinohpActionPerformed
+    }// GEN-LAST:event_isinohpActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+        // <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
+        // (optional) ">
+        /*
+         * If Nimbus (introduced in Java SE 6) is not available, stay with the default
+         * look and feel.
+         * For details see
+         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -277,30 +285,34 @@ public class PesanPelanggan extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null,
+                    ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null,
+                    ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null,
+                    ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PesanPelanggan.class.getName()).log(java.util.logging.Level.SEVERE, null,
+                    ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
